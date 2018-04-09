@@ -27,22 +27,26 @@ public class ControllerTest {
 
 	@Test
 	public void addTest() {
-		assert(Double.parseDouble(controller.model.add(5.5, 3)) == 8.5);
+		boolean x = (Double.parseDouble(controller.model.add(5.5, 3)) == 8.5) ;
+		assert(x);
 	}
 	
 	@Test
 	public void subtractTest() {
-		assert(Double.parseDouble(controller.model.subtract(6, 2)) == 4);
+		boolean x = (Double.parseDouble(controller.model.subtract(6, 2)) == 4);
+		assert(x);
 	}
 	
 	@Test
 	public void multiplyTest() {
-		assert(Double.parseDouble(controller.model.multiply(5.5, 2)) == 11);
+		boolean x = (Double.parseDouble(controller.model.multiply(5.5, 2)) == 11);
+		assert(x);
 	}
 	
 	@Test
 	public void divideTest1() {
-		assert (Double.parseDouble(controller.model.divide(10, 4)) == 2.5);
+		boolean x = (Double.parseDouble(controller.model.divide(10, 4)) == 2.5);
+		assert(x);
 	}
 	
 	@Test
@@ -52,7 +56,8 @@ public class ControllerTest {
 	
 	@Test
 	public void modTest1() {
-		assert (Double.parseDouble(controller.model.mod(10, 4)) == 2);
+		boolean x =  (Double.parseDouble(controller.model.mod(10, 4)) == 2);
+		assert(x);
 	}
 	
 	@Test
@@ -62,7 +67,8 @@ public class ControllerTest {
 	
 	@Test
 	public void squareRootTest1() {
-		assert(Double.parseDouble(controller.model.squareRoot(4)) == 2);
+		boolean x = (Double.parseDouble(controller.model.squareRoot(4)) == 2);
+		assert(x);
 	}
 	
 	@Test
